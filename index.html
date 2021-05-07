@@ -2,22 +2,156 @@
 <head>
 <title> Myself </title>
 <style type = "text/css">
-p{color : green;font-size : 80;font-family : Rockwell; text-align:center}
-body{background-color : rgb(100,5,50); font-size : 20;}
+.content-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+}
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: shown;
+}
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;  
+}
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+ 
+ 
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+ 
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+ 
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+ 
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+ 
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+ 
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+ 
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+ 
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+ 
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes animate {
+ 
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+ 
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+ 
+}
+p{font-size : 80;font-family : Rockwell; text-align:center}
+body{font-size : 20;}
 h1{text-align : center;}
 h3{text-align : center}
 </style>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-<p><b><i> This is me <br> Devraj Therani </p>
-<p align= "center"><a href = "https://www.facebook.com/devraj.therani"><i class="fab fa-facebook"></a></i></p>
-<h1>Click here to learn more about me and send a friend request if u want</h1><br><br><br>
-<p align= "center"><a href = "https://twitter.com/DevrajTherani"><i class="fab fa-twitter 10px"></a></i></p>
-<h1>Another place where you can connect with me and follow me to receive my tweets</h1><br><h3>U can also keep a look at the date and time here</h3>
-<p align= "center"><iframe src="https://editor.p5js.org/33388877725/embed/lglfmB6hB" height="600"width=600></iframe></p>
-<center>Also for any query you can mail me on my e-mail id:-<br>
-<p align = "center"><a href="mailto:devraj.therani@yahoo.com"><i class="fas fa-envelope"></i></a></p><br><center>Yahoo Account<p align = "center"><a href="mailto:devrajtherani@gmail.com"><i class="fas fa-envelope"></i></a></p><br><center>Google Account<p align = "center"><a href="mailto:devrajtherani@outlook.com"><i class="fas fa-envelope"></i></a></p><br><center>Microsoft Account
-<p align= "center"><a href = "https://github.com/devrajtherani"><i class="fab fa-github"></a></i></p>
+<div class="area" ></div>
+<div class="page-wrapper">
+<div class="content-wrapper">
+   <p font-color: white;><b><i> This is me <br> Devraj Therani <br><br><br><br>
+<a href = "https://www.facebook.com/devraj.therani"><i class="fab fa-facebook"></i></a>
+<a href = "https://www.twitter.com/DevrajTherani"><i class="fab fa-twitter"></i></a>
+<a href="mailto:devraj.therani@yahoo.com"><i class="fas fa-envelope"></i></a><a href="mailto:devrajtherani@gmail.com"><i class="fas fa-envelope"></i></a><a href="mailto:devrajtherani@outlook.com"><i class="fas fa-envelope"></i></a>
+<a href = "https://github.com/devrajtherani"><i class="fab fa-github"></a></i></p>
+</div>
+<div class="area" >
+   <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+   </ul>
+</div >
+<canvas width="1028" height="564">
 </body>
 </html>
