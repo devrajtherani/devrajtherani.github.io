@@ -193,7 +193,6 @@ font-size: 1vw;}
     background-color: whitesmoke;
   }
   @media  only screen and (max-height:768px){
-      {width:100%;}
     .wave{
         position: fixed;
         top: 0;
