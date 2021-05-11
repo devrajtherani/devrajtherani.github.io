@@ -174,18 +174,22 @@ body{
       transform: scale(0,0) rotateZ(90deg);opacity:0
     }
   }
-  p{color: #FFFFFF; font-family : Rockwell;padding-top: 0;}
-  h1{text-align : center; color:#0000FF; font-size: 7vw;}
+  p{color: #FFFFFF; font-family : Rockwell;padding-top: 0; font-size: 5vw;}
+  h1{text-align : center; color:#0000FF; font-size: 4vw;}
   h4{text-align: right;
     vertical-align: top;
   padding-right: 50px;
-font-size: 2vw;}
+font-size: 1vw;}
   h5{
     text-align: right;
     vertical-align: top;
   padding-right: 30px;
-  font-size: 2vw;
+  font-size: 1vw;
   }
   a{
     color: #00f;
+  }
+  a:hover{
+    background-color : orangered;
+    overflow-y: hidden;
   }
