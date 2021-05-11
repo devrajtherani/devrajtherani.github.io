@@ -192,37 +192,3 @@ font-size: 1vw;}
   a:hover{
     background-color: whitesmoke;
   }
-  @media  only screen and (max-height:768px){
-    .wave{
-        position: fixed;
-        top: 0;
-        left: 0;
-        opacity: .4;
-        position: absolute;
-        top: 3%;
-        left: 10%;
-        background: #0af;
-        width: 100px;
-        height: 600px;
-        margin-left: -150px;
-        margin-top: -250px;
-        transform-origin: 50% 40%;
-        border-radius: 43%;
-        animation: drift 7000ms infinite linear;
-    }
-    .wave.-three{
-        animation: drift 7500ms infinite linear;
-        position: fixed;
-        background-color: #77daff;
-        width: 100px;
-        height: 600px;
-    }
-    .wave.-two{
-        animation: drift 3000ms infinite linear;
-        position: fixed;
-        opacity: .1;
-        background: black;
-        width: 100px;
-        height: 600px;
-    }
-  }
