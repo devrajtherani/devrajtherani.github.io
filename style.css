@@ -175,16 +175,16 @@ body{
     }
   }
   p{color: #FFFFFF;font-size : 80;font-family : Rockwell;padding-top: 0;}
-  h1{text-align : center; color:#0000FF; font-size: 10vw;}
+  h1{text-align : center; color:#0000FF; font-size: 7vw;}
   h4{text-align: right;
     vertical-align: top;
   padding-right: 50px;
-font-size: 5vw;}
+font-size: 2vw;}
   h5{
     text-align: right;
     vertical-align: top;
   padding-right: 30px;
-  font-size: 5vw;
+  font-size: 2vw;
   }
   a{
     color: #00f;
