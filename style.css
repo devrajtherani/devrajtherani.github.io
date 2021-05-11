@@ -45,7 +45,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #a52a2a;
+    background-color: orange;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -64,8 +64,8 @@ body{
     top: 3%;
     left: 10%;
     background: #0af;
-    width: 1500px;
-    height: 1300px;
+    width: 1000px;
+    height: 1000px;
     margin-left: -150px;
     margin-top: -250px;
     transform-origin: 50% 40%;
@@ -175,13 +175,17 @@ body{
     }
   }
   p{color: #FFFFFF;font-size : 80;font-family : Rockwell;padding-top: 0;}
-  body{font-size : 20;}
-  h1{text-align : center; color:#0000FF}
+  h1{text-align : center; color:#0000FF; font-size: 10vw;}
   h4{text-align: right;
     vertical-align: top;
-  padding-right: 50px;}
+  padding-right: 50px;
+font-size: 5vw;}
   h5{
     text-align: right;
     vertical-align: top;
   padding-right: 30px;
+  font-size: 5vw;
+  }
+  a{
+    color: #00f;
   }
