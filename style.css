@@ -192,7 +192,7 @@ font-size: 1vw;}
   a:hover{
     background-color: whitesmoke;
   }
-  @media screen only and (min-height:400px){
+  @media screen only and (max-width:768px){
     .wave{
         position: fixed;
         top: 0;
