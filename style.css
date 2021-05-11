@@ -190,6 +190,5 @@ font-size: 1vw;}
     color: #00f;
   }
   a:hover{
-    background-color : orangered;
-    overflow-y: hidden;
+    background-color: whitesmoke;
   }
