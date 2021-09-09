@@ -8,12 +8,7 @@ function myFunction(){
 
 function showPage(){
     document.getElementById("loader-wrapper") .style.display = "none";
-    document.getElementById("content") .style.display = "block";
-    x = setTimeout(countdown, 1500)
-}
-function countdown(){
-  document.getElementById("content") .style.display = "none";
-  document.getElementById("timer") .style.display = "block";
+    document.getElementById("timer") .style.display = "block";
 }
 function openNav() {
     document.getElementById("mySidenav").style.width = "15vw";
