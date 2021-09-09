@@ -6,7 +6,7 @@ function myFunction(){
 }
 
 function showPage(){
-    document.getElementById("loader-wrapper") .style.display = "none";
+    document.getElementById("loader") .style.display = "none";
     document.getElementById("timer") .style.display = "block";
 }
   // Set the date we're counting down to
