@@ -1,5 +1,4 @@
 var myVar;
-var x;
 
 function myFunction(){
     myVar = setTimeout(showPage, 500);
@@ -10,13 +9,6 @@ function showPage(){
     document.getElementById("loader-wrapper") .style.display = "none";
     document.getElementById("timer") .style.display = "block";
 }
-function openNav() {
-    document.getElementById("mySidenav").style.width = "15vw";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
   // Set the date we're counting down to
 var countDownDate = new Date("Sep 15, 2021 21:02:12").getTime();
 
