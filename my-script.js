@@ -3,7 +3,7 @@ var x;
 
 function myFunction(){
     myVar = setTimeout(showPage, 500);
-    document.getElementById("timer") .style.display = "none";
+    document.getElementById("timer").style.display = "none";
 }
 
 function showPage(){
@@ -12,8 +12,8 @@ function showPage(){
     x = setTimeout(countdown, 1500)
 }
 function countdown(){
-  document.getElementById("content") .style.display = "none";
-  document.getElementById("timer") .style.display = "block";
+  document.getElementById("content").style.display = "none";
+  document.getElementById("timer").style.display = "block";
 }
 function openNav() {
     document.getElementById("mySidenav").style.width = "15vw";
