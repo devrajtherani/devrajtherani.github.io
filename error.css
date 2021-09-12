@@ -1,0 +1,16 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+h3{
+    font-size: 2vw;
+    padding: 10px;
+}
+.fa-envelope{
+    color: #ffffff;
+}
+.fa-envelope:hover{
+    color: #87cefa;
+}
