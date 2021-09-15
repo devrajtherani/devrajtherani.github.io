@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    background-color: #000000;
+    cursor: auto;
+}
+p{
+    text-align: center;
+}
+a{
+    cursor:pointer;
+}
+h1{
+    color: #eeeeee;
+    text-align: center;
+    margin-top: 2.5vw;
+    font-size: 4.375vw;
+    transition-duration: 0.8s;
+}
+h1:hover{
+    font-size: 6.25vw;
+}
+h3{
+    color: #0000ff;
+    text-align: center;
+    font-size: 3.125vw;
+    transition-duration: 0.8s;
+    animation-name: up;
+}
+h3:hover{
+    font-size: 4.375vw;
+}
+h4{
+    color: #ffffff;
+    font-size: 2.5vw;
+    left: 0;
+    text-align: left;
+    padding-left: 3.75vw;
+}
+.fab {
+    padding: 1.25vw;
+    font-size: 3.125vw;
+    width: 3.125vw;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.3125vw 0.125vw;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+  }
+  
+  .fab:hover {
+    color: #ffffff;
+      opacity: 1;
+      font-size: 3.75vw;
+      width: 3.75vw;
+  }
+  .fa-facebook-f{
+      color: #3b5999;
+  }
+  .fa-facebook-f:hover{
+    background-color: #3b5999;
+  }
+  .fa-twitter{
+      color: #55acee;
+  }
+  .fa-twitter:hover{
+      background-color: #55acee;
+  }
+  .fa-github{
+      color: #333333;
+  }
+  .fa-github:hover{
+      background-color: #333333;
+  }
+  .fa-yahoo{
+      color: #a020f0;
+  }
+  .fa-yahoo:hover{
+      background-color: #a020f0;
+  }
+  .fa-google{
+      color: #ea4335;
+  }
+  .fa-google:hover{
+      background-color: #ea4335;
+  }
+  .fa-microsoft{
+      color: #ffba01;
+  }
+  .fa-microsoft:hover{
+      background-color: #ffba01;
+  }
+span{
+    color: #eeeeee;
+}
+.fas{
+    font-size: 3.75vw;
+    transition-duration: 0.5s;
+}
+.fas:hover{
+    font-size: 5vw;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#timer h1{
+    color: #000000;
+}
+#load{
+    position: fixed;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    right: 48vw;
+    top: 25vw;
+}
+@-webkit-keyframes spin{
+    0%{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin{
+    0%{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#demo{
+    color: #000000;
+}
