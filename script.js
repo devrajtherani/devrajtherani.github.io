@@ -60,16 +60,3 @@ var x = setInterval(function() {
     x = setTimeout(countdown, 5000);
   }
 }, 1000);
-      function onClick(e) {
-        e.preventDefault();
-        grecaptcha.ready(function() {
-          grecaptcha.execute('6LeOO3McAAAAAPk0N5Hmb3p9Um_7ZanI2_SnXqZH', {action: 'submit'}).then(function(token) {
-              // Add your logic to submit to your backend server here.
-          });
-        });
-      }
-      var onloadCallback = function() {
-        grecaptcha.render('html_element', {
-          'sitekey' : '6LeOO3McAAAAAPk0N5Hmb3p9Um_7ZanI2_SnXqZH'
-        });
-      };
