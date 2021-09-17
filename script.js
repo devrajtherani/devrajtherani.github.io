@@ -63,7 +63,7 @@ var x = setInterval(function() {
       function onClick(e) {
         e.preventDefault();
         grecaptcha.ready(function() {
-          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+          grecaptcha.execute('6LeOO3McAAAAAPk0N5Hmb3p9Um_7ZanI2_SnXqZH', {action: 'submit'}).then(function(token) {
               // Add your logic to submit to your backend server here.
           });
         });
