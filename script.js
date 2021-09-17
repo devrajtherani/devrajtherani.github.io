@@ -60,3 +60,6 @@ var x = setInterval(function() {
     x = setTimeout(countdown, 5000);
   }
 }, 1000);
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
