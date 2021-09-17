@@ -68,3 +68,8 @@ var x = setInterval(function() {
           });
         });
       }
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LeOO3McAAAAAPk0N5Hmb3p9Um_7ZanI2_SnXqZH'
+        });
+      };
