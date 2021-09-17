@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="icons/Dev.ico">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>      
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
         <title>
             Devraj Therani
         </title>
@@ -51,12 +51,11 @@
                 <a onclick=location.href='mailto:devraj.therani@yahoo.com' title="Mail Suggestions to Devraj's Yahoo Mail"><i class="fab fa-yahoo"></i></a>
                 <a onclick=location.href='mailto:devrajtherani@gmail.com' title="Mail Suggestions to Devraj's Gmail"><i class="fab fa-google"></i></a>
                 <a onclick=location.href='mailto:devrajtherani@outlook.com' title="Mail Suggestions to Devraj's Outlook Mail"><i class="fab fa-microsoft"></i></a>
-        <br><br> 
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LeOO3McAAAAAPk0N5Hmb3p9Um_7ZanI2_SnXqZH"></div>
-      <br/>
-      <input type="submit" value="Submit">
-    </form>
+        <br><br>
+        <button class="g-recaptcha" 
+        data-sitekey="6LeOO3McAAAAAPk0N5Hmb3p9Um_7ZanI2_SnXqZH" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
             </div>
             <div id="timer"><h1 id="text" style="color: #000000;">The New Layout and Lot More comes in</h1><br><br><h3 id="demo"></h3><h3 id="demo1">Redirected<i id="load" class="fas fa-cog"></i></h3></div>
         
