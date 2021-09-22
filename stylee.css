@@ -23,6 +23,7 @@
   .sidenav a:hover {
     color: #0000ff;
     font-size: 3vw;
+    width: max-content;
 }
   
   .sidenav .closebtn {
