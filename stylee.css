@@ -18,12 +18,11 @@
     color: #808080;
     display: block;
     transition: 0.3s;
-    width: max-content;
 }
   
   .sidenav a:hover {
     color: #0000ff;
-    font-size: 3vw;
+    font-size: 2.7vw;
 }
   
   .sidenav .closebtn {
