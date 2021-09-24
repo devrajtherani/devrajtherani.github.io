@@ -449,6 +449,12 @@ span{
     top: 1vw;
     cursor: pointer;
 }
+#share #mail, #share #copy, #share #copied{
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+}
 #copy{
     cursor: pointer;
     color: #ffffff;
