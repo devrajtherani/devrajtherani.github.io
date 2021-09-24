@@ -201,7 +201,7 @@ h4{
     text-align: left;
     padding-left: 3.75vw;
 }
-.fab {
+.fab, #share .fas {
     padding: 1.25vw;
     font-size: 3.125vw;
     width: 3.125vw;
@@ -424,4 +424,38 @@ span{
 @keyframes animatebottom{
     from{ bottom: -100px; opacity: 0;}
     to{ bottom: 0; opacity: 1;}
+}
+#share .fas:hover{
+    opacity: 1;
+    font-size: 3.75vw;
+    width: 3.75vw;
+}
+#share{
+    top: 0;
+    text-align: center;
+    position: fixed;
+    background-color: transparent;
+    background-image: url("https://raw.githubusercontent.com/devrajtherani/devrajtherani.github.io/main/icons/Dev%20-%20Copy%20(2).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+#close{
+    position: fixed;
+    color: #ffffff;
+    font-size: 2.5vw;
+    right: 2vw;
+    top: 1vw;
+    cursor: pointer;
+}
+#copy{
+    cursor: pointer;
+    color: #ffffff;
+}
+#copy:hover{
+    color: #0000ff;
+}
+#copied{
+    color: #ffff00;
 }
