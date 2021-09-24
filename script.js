@@ -12,7 +12,7 @@ function myFunction(){
 function showPage(){
     document.getElementById("loader-wrapper") .style.display = "none";
     document.getElementById("content") .style.display = "block";
-    g = setTimeout(share, 120000)
+    g = setTimeout(share, 120000);
 }
 function share(){
   document.getElementById("content") .style.display = "none";
