@@ -459,3 +459,29 @@ span{
 #copied{
     color: #ffff00;
 }
+#fb, #tweet, #wassap, #mail{
+    color: #ffffff;
+    padding: 1.25vw;
+    font-size: 3.125vw;
+    width: 3.125vw;
+}
+#fb:hover, #tweet:hover, #wassap:hover, #mail:hover{
+    background: none;
+    font-size: 3.75vw;
+    width: 3.75vw;
+}
+#fb:hover{
+    color: #3b5999;
+}
+#tweet:hover{
+    color: #55acee;
+}
+#wassap:hover{
+    color: #4fce5d;
+}
+#mail:hover{
+    color: #87cefa;
+}
+li{
+    display: inline-block;
+}
