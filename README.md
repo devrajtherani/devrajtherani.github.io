@@ -1,4 +1,4 @@
-<a href="https://devrajtherani.github.io" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/devrajtherani/devrajtherani.github.io/main/icons/Dev%20-%20Copy%20(2).png"></a>
+<a href="https://devrajtherani.github.io" style="display: block; text-align: center"><img src="https://raw.githubusercontent.com/devrajtherani/devrajtherani.github.io/main/icons/Dev%20-%20Copy%20(2).png"></a>
 - 👋 Hi, I’m @devrajtherani
 - 👀 I’m interested in making new web pages and academic side to all SUBJECTS
 - 🌱 I’m currently learning and performing codes with HTML, CSS and JavaScript
