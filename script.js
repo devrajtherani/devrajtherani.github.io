@@ -13,7 +13,7 @@ function showPage(){
     document.getElementById("loader-wrapper") .style.display = "none";
     document.getElementById("content") .style.display = "block";
     document.getElementById("share") .style.display = "none";
-    g = setTimeout(share, 120000);
+    g = setTimeout(share, 30000);
 }
 function share(){
   document.getElementById("content") .style.display = "none";
