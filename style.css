@@ -243,10 +243,10 @@ h4{
       background-color: #a020f0;
   }
   .fa-google{
-      color: #ea4335;
+      color: #DB4437;
   }
   .fa-google:hover{
-      background-color: #ea4335;
+      background-color: #DB4437;
   }
   .fa-microsoft{
       color: #ffba01;
@@ -477,13 +477,13 @@ span{
     width: 3.75vw;
 }
 #fb:hover{
-    color: #3b5999;
+    color: #4267B2;
 }
 #tweet:hover{
-    color: #55acee;
+    color: #1DA1F2;
 }
 #wassap:hover{
-    color: #4fce5d;
+    color: #25D366;
 }
 #mail:hover{
     color: #87cefa;
