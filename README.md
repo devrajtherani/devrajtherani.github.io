@@ -7,6 +7,8 @@
                       Visit my Site and send me suggestions and contact on any of the e-mails in the second tier
 
 Hope you Enjoy the Site 😃❗
+- 👷‍♂️ Currently working with
+<img src="svg/languages.svg">
 
 <!---
 devrajtherani/devrajtherani is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
