@@ -1,4 +1,4 @@
-<a href="https://devrajtherani.github.io"><img src="https://raw.githubusercontent.com/devrajtherani/devrajtherani.github.io/main/icons/Dev%20-%20Copy%20(2).png"></a>
+<a href="https://devrajtherani.github.io"><p align="center"><img src="https://raw.githubusercontent.com/devrajtherani/devrajtherani.github.io/main/icons/Dev%20-%20Copy%20(2).png"></p></a>
 - 👋 Hi, I’m @devrajtherani
 - 👀 I’m interested in making new web pages and academic side to all SUBJECTS
 - 💞️ I’m looking to collaborate on [Devraj Therani](https://devrajtherani.github.io) and [Quizzables | Devraj Therani](https://devrajtherani.github.io/quizzables)
