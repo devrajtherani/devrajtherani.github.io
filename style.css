@@ -491,3 +491,42 @@ span{
 li{
     display: inline-block;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgrey; 
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+html {
+  overflow: auto;
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track { 
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: darkgrey; 
+}
