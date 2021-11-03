@@ -46,3 +46,24 @@
     -webkit-animation: spin1 1s linear 1;
     animation: spin1 1s linear 1;
 }
+#btn{
+    background-color: #0000ff;
+    width: max-content;
+    height: max-content;
+    font-size: calc(0.5rem + 1vw);
+    cursor: pointer;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    transition-duration: 0.8s;
+    border-color: transparent;
+}
+#btn:hover{
+    background: none;
+    color: #0000ff;
+    border-color: #0000ff;
+    width: calc(max-content + 1);
+    height: calc(max-content + 1);
+    font-size: calc(1rem + 1vw);
+}
