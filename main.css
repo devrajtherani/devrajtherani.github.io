@@ -25,10 +25,10 @@ html {
   }
 body{
     text-align: center;
-    font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     background-color: #000000;
+    font-family: 'Roboto Mono', monospace;
 }
 p{
     text-align: center;
@@ -40,21 +40,21 @@ h1{
     color: #eeeeee;
     text-align: center;
     margin-top: 60px;
-    font-size: calc(2rem + 1vw);
+    font-size: calc(1.8rem + 1vw);
     transition-duration: 0.8s;
 }
 h1:hover{
-    font-size: calc(4rem + 1vw);
+    font-size: calc(3.6rem + 1vw);
 }
 h3{
     color: #0000ff;
     text-align: center;
-    font-size: calc(2rem + 1vw);
+    font-size: calc(1.2rem + 1vw);
     transition-duration: 0.8s;
     animation-name: up;
 }
 h3:hover{
-    font-size: calc(4rem + 1vw);
+    font-size: calc(2.4rem + 1vw);
 }
 #main{
     top: 0;
