@@ -4,7 +4,7 @@
 }
 .slideanim.slide {                  
     visibility: visible;                  
-    animation: slide 3s;
+    animation: slide 2s;
 }
 .slideanim::after {
     /* useful when its child elements are float:left; */
