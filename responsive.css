@@ -1,11 +1,17 @@
 @media only screen and (max-height: 660px){
+    #about{
+        top: 125vh;
+    }
+    #web{
+        top: 225vh;
+    }
     #share{
-        top: 348vh;
+        top: 360vh;
     }
 }
 @media only screen and (max-height: 430px){
     #about{
-        top: 135vh;
+        top: 140vh;
     }
     #web{
         top: 275vh;
@@ -16,12 +22,12 @@
 }
 @media only screen and (max-height: 300px){
     #about{
-        top: 155vh;
+        top: 178vh;
     }
     #web{
-        top: 322vh;
+        top: 345vh;
     }
     #share{
-        top: 540vh;
+        top: 570vh;
     }
 }
