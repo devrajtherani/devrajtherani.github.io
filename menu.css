@@ -1,0 +1,60 @@
+#menu{
+    position: fixed;
+    background-color: red;
+    top: 30vh;
+    left: 0;
+    z-index: 1001;
+}
+#open{
+    color: #ffffff;
+    font-size: 20px;
+    width: 15px;
+    border-radius: 0;
+}
+#open:hover{
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+      opacity: 1;
+      -webkit-animation: spin1 1s linear 1;
+      animation: spin1 1s linear 1;
+      cursor: pointer;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3.75vw;
+    cursor: url("https://raw.githubusercontent.com/devrajtherani/devrajtherani.github.io/main/icons/Dev%20-%20Copy%20(2).png"), auto;
+  }
+  .sidenav a {
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 32px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #0000ff;
+    font-size: 40px;
+    padding: 10px 0px;
+    margin: 0;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }

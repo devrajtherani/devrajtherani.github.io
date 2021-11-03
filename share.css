@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+#share{
+    top: 310vh;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Exo 2', sans-serif;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.one{
+    position: absolute;
+    top: 41%;
+    left: 45%;
+    z-index: -1;
+}
+#share #mail, #share #copy, #share #copied{
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+#copy{
+    cursor: pointer;
+    color: #ffffff;
+}
+#copy:hover{
+    color: #0000ff;
+}
+#copied{
+    color: #ffff00;
+    padding: 20px;
+    font-size: calc(2rem + 1vw);
+    width: calc(2rem + 1vw);
+}
+#fb, #tweet, #wassap, #mail, #copy, #messenger{
+    color: #ffffff;
+    padding: 20px;
+    font-size: calc(2rem + 1vw);
+    width: calc(2rem + 1vw);
+}
+#fb:hover, #tweet:hover, #wassap:hover, #mail:hover, #copy:hover, #copied:hover, #messenger:hover{
+    background: none;
+    font-size: calc(3rem + 1vw);
+    width: calc(3rem + 1vw);
+}
+#fb:hover{
+    color: #4267B2;
+}
+#tweet:hover{
+    color: #1DA1F2;
+}
+#wassap:hover{
+    color: #25D366;
+}
+#mail:hover{
+    color: #87cefa;
+}
+#messenger:hover{
+    color: #006aff;
+}
+li{
+    display: inline-block;
+}
+#arrow3{
+  position: absolute;
+  bottom: 2vh;
+  right: 5vw;
+  font-size: 20px;
+  width: 20px;
+}
+#arrow3:hover{
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+    opacity: 1;
+    -webkit-animation: spin1 1s linear 1;
+    animation: spin1 1s linear 1;
+}

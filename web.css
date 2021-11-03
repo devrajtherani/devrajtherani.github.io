@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+#web{
+    top: 200vh;
+    width: 100%;
+    min-height: 100%;
+    max-height: max-content;
+    position: absolute;
+    font-family: 'Cinzel', serif;
+}
+.fa-discord{
+    color: #7289da;
+}
+.fa-discord:hover{
+    background-color: #7289da;
+}
+.fa-instagram{
+    color: #ffa500;
+}
+.fa-facebook-messenger{
+    color: #006aff;
+}
+.fa-facebook-messenger:hover{
+    background-color: #006aff;
+}
+.fa-instagram:hover{
+    background-color: #ffa500;
+}
+.fa-linkedin{
+    color: #0e76a8;
+}
+.fa-linkedin:hover{
+    background-color: #0e76a8;
+}
+h2{
+    color: #eeeeee;
+    text-align: center;
+    margin-top: 60px;
+    font-size: calc(2rem + 1vw);
+    transition-duration: 0.8s;
+    font-family: 'Stick No Bills', sans-serif;
+}
+h2:hover{
+    font-size: calc(4rem + 1vw);
+}
+#arrow4{
+  position: absolute;
+  bottom: 2vh;
+  right: 5vw;
+  font-size: 20px;
+  width: 20px;
+}
+#arrow4:hover{
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+    opacity: 1;
+    -webkit-animation: spin1 1s linear 1;
+    animation: spin1 1s linear 1;
+}

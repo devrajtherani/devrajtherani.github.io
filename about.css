@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap');
+#about{
+    top: 100vh;
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 100%;
+    max-height: max-content;
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+}
+#about h1{
+    color: #0000ff;
+    text-align: center;
+    font-size: calc(2rem + 1vw);
+}
+#about h4{
+    padding: 20px 0 0 0;
+    color: #0000ff;
+    left: 0;
+    text-align: left;
+    padding-left: 3.75vw;
+}
+#about #demo{
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+#about p, #about a{
+    font-size: calc(0.5rem + 1vw);
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+}
+#arrow2{
+  position: absolute;
+  bottom: 2vh;
+  right: 5vw;
+  font-size: 20px;
+  width: 20px;
+}
+#arrow2:hover{
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+    opacity: 1;
+    -webkit-animation: spin1 1s linear 1;
+    animation: spin1 1s linear 1;
+}

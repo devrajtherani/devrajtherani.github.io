@@ -1,0 +1,27 @@
+@media only screen and (max-height: 660px){
+    #share{
+        top: 348vh;
+    }
+}
+@media only screen and (max-height: 430px){
+    #about{
+        top: 135vh;
+    }
+    #web{
+        top: 275vh;
+    }
+    #share{
+        top: 455vh;
+    }
+}
+@media only screen and (max-height: 300px){
+    #about{
+        top: 155vh;
+    }
+    #web{
+        top: 322vh;
+    }
+    #share{
+        top: 540vh;
+    }
+}
