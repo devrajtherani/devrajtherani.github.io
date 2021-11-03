@@ -7,12 +7,6 @@ function typeWriter() {
     document.getElementById("demo").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
+    document.getElementById("btn").style.display = "none";
   }
 }
-function openNav() {
-    document.getElementById("mySidenav").style.width = "20vw";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
