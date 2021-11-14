@@ -36,3 +36,6 @@ function reappear(){
   document.getElementById("copy").style.display = "block";
   document.getElementById("copied").style.display = "none";
 }
+if(window.top != window.self){
+    top.location.href = document.location.href;
+}
