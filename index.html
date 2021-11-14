@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Frame-Options" content="sameorigin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="8lBJterSoKfXz4re4R8TRtaOkrz4UWJjYGO3otC2D4k" />
     <meta name="twitter:card" content="summary" />
@@ -49,9 +50,6 @@
     header('HTTP/1.1 301 Moved Permanently');
     header('Location: https://devrajtherani.github.io/');
     exit(); ?>
-    <?php
-//Set the Content-Security-Policy header with PHP.
-header("Content-Security-Policy: frame-ancestors 'none'");
     <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
