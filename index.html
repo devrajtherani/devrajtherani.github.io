@@ -49,6 +49,9 @@
     header('HTTP/1.1 301 Moved Permanently');
     header('Location: https://devrajtherani.github.io/');
     exit(); ?>
+    <?php
+//Set the Content-Security-Policy header with PHP.
+header("Content-Security-Policy: frame-ancestors 'none'");
     <div id="loader-wrapper">
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
