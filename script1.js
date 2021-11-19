@@ -23,7 +23,7 @@ function back(){
 }
 function copyToClipboard(text) {
 var inputc = document.body.appendChild(document.createElement("input"));
-inputc.value = https://devrajtherani.github.io;
+inputc.value = windows.location.href;
 inputc.focus();
 inputc.select();
 document.execCommand('copy');
