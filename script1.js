@@ -23,7 +23,7 @@ function back(){
 }
 function copyToClipboard(text) {
 var inputc = document.body.appendChild(document.createElement("input"));
-inputc.value = windows.location.href;
+inputc.value = window.location.href;
 inputc.focus();
 inputc.select();
 document.execCommand('copy');
