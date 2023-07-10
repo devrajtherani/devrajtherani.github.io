@@ -32,6 +32,12 @@
 .fa-linkedin:hover{
     background-color: #0e76a8;
 }
+.fa-spotify{
+    color: #1ed760;
+}
+.fa-spotify:hover{
+    background-color: #1ed760;
+}
 h2{
     color: #eeeeee;
     text-align: center;
