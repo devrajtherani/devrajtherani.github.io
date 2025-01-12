@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #middle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10%; /* Optional, for spacing from the top */
+            max-width: 70%; /* Control the width of the content */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            padding: 10px;
+            background-color: lightgrey;
+            line-height: 50px;
+            width: max-content; /* Start with no width */
+            max-width: 70%;
+            overflow-wrap: break-word; /* Keep it in a line */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Common Page</h1>
+    <div id="middle">
+        <h2>Why the redirect here?</h2>
+        <p id="typewriter">The Projects and Activities Page are not being static coded, but rather created using a framework. The framework will be published as well on the Projects Page and the two pages will be a showcase of project use. The framework will be displayed in a live form which can be manipulated with and used to create similar pages. A countdown will be added to the page as soon as the framework is ready to be set go. In the meantime, you will be redirected to the LinkedIn Page of Devraj Therani where links of web published projects and activities are present.</p>
+    </div>
+
+    <script>
+        // Typewriter effect function
+        var i = 0; // Declare i outside the function to retain the value between calls
+        function typeWriter(txt, speed) {
+            if (i < txt.length) {
+                document.getElementById("typewriter").innerHTML += txt.charAt(i); // Use innerText to avoid rendering issues
+                i++;
+                setTimeout(function() {
+                    typeWriter(txt, speed);
+                }, speed);
+            }
+        }
+            function redirect(){
+                window.location.href = "https://www.linkedin.com/in/devrajtherani"
+            }
+
+        // Wait for the DOM to load fully
+        document.addEventListener('DOMContentLoaded', function () {
+            var text = document.getElementById('typewriter').textContent; // Get the text content of <p>
+            document.getElementById('typewriter').textContent = ''; // Clear the content for typing effect
+            typeWriter(text, 45); // Start the typewriter effect
+            setTimeout(redirect, text.length*45+10000)
+        });
+    </script>
+</body>
+</html>
