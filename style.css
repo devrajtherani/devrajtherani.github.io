@@ -250,30 +250,33 @@ body {
   }
   
   /* Toggle button */
-  .toggle-button-container {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 9999;
-  }
-  
-  .toggle-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 4px #111;
-  }
-  
-  .toggle-button-icon {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
-  }
+.toggle-button-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  text-align: center;
+  align-items: center;
+}
+
+.toggle-button {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #111;
+  display: flex; /* Add flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.toggle-button-icon {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
   
   .toggle-button.light-mode {
     background-color: #ddd; /* Change the background color in light mode */
@@ -427,7 +430,7 @@ body {
     }
   }
 
-.fa-circle{
+/* .fa-circle{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -440,7 +443,7 @@ body {
     height: 40px;
     border-radius: 50%;
     box-shadow: 0 2px 4px #111;
-}
+} */
 
 .long{
     display: none;

@@ -10,7 +10,7 @@ document.addEventListener("click", function (event){
     let clicked_element = event.target
     console.log(clicked_element)
     console.log(parent)
-    if (clicked_element.classList.contains("toggle-button-icon") && clicked_element.classList.contains("light-mode")){
+    if ((clicked_element.classList.contains("toggle-button-icon") && clicked_element.classList.contains("light-mode")) || (clicked_element.classList.contains("toggle-button") && clicked_element.classList.contains("light-mode"))){
         console.log("entree111")
         document.body.className = document.body.className.replace(" light-mode", "")
         console.log(document.body.getElementsByTagName("*"))
@@ -21,7 +21,7 @@ document.addEventListener("click", function (event){
         }
         console.log("end")
     }
-    else if (clicked_element.classList.contains("toggle-button-icon")){
+    else if (clicked_element.classList.contains("toggle-button-icon") || clicked_element.classList.contains("toggle-button")){
         console.log("entree")
             document.body.classList += " light-mode"
         console.log(document.body.getElementsByTagName("*"))
