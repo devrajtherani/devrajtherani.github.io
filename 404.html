@@ -45,7 +45,14 @@
     <body onselectstart="return false">
         <a title="Devraj Therani" href="https://devrajtherani.github.io"><img style="padding: 10px;" src="https://raw.githubusercontent.com/devrajtherani/devrajtherani.github.io/main/icons/Dev%20-%20Copy%20(2).png" alt="Quizzables" width="8%" height="auto"></a>
         <h1>404 Error encountered</h1>
-        <h3>Oops!<br>The page you are looking for may have been removed or renamed<br>Try going back to the Home Page to research for the Page you are looking for!<br><br><br>Mail the developer if issues faced again :-<br><br><a href="mailto:devrajtherani@outlook.com?subject=Mail from a user visiting 404 error page&body=Hi Devraj, I am facing an issue....."><i class="fas fa-envelope"></i></a></h3>
+        <h3 id="change">Oops!<br>The page you are looking for may have been removed or renamed<br>Try going back to the Home Page to research for the Page you are looking for!<br><br><br>Mail the developer if issues faced again :-<br><br><a href="mailto:devrajtherani@outlook.com?subject=Mail from a user visiting 404 error page&body=Hi Devraj, I am facing an issue....."><i class="fas fa-envelope"></i></a></h3>
     </body>
+    <script>
+        if (window.location.href="https://devrajtherani.github.io/activities"){
+            document.getElementById("change").innerHTML="Activities Page has been taken down temporarily due to technical issues and Devraj Therani is at work to get it back online as soon as possible<br>Apologies for the inconvenience caused and your patience is appreciated<br>In the meantime, you will be redirected to Devraj Therani's LinkedIn Page, in 10 seconds, where web published activity related information is displayed
+            
+        setTimeout(() => {
+            window.location.href = "https://www.linkedin.com/in/devrajtherani"}, 10000);}
+    </script>
 </html>
 
