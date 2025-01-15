@@ -62,13 +62,13 @@ document.addEventListener("click", function (event){
         console.log(clicked_element.classList)
         clicked_element.className = clicked_element.className.replace("fa-info", "fa-minus")
         document.getElementsByClassName("short "+ clicked_element.parentElement.classList[1].split("-")[2])[0].style.display = "none"
-        Array.from(document.getElementsByClassName("short")).forEach((element) => {
-            element.style.animation = "hide-down 2s forwards";
-        });
+        // Array.from(document.getElementsByClassName("short")).forEach((element) => {
+        //     element.style.display = "none";
+        // });
 
         // Hide all elements with the "long" class
         Array.from(document.getElementsByClassName("long")).forEach((element) => {
-            element.style.animation = "hide-down 2s forwards";
+            //element.style.animation = "hide-down 2s forwards";
         });
         setTimeout(() => {
             console.log(
@@ -79,17 +79,17 @@ document.addEventListener("click", function (event){
             element.style.animation = "show-down 2s forwards";
               })
         });
-        setTimeout(() => {
+    //     setTimeout(() => {
             
-        Array.from(document.getElementsByClassName("short")).forEach((element) => {
-          element.style.display = "none";
-          element.style.animation = "";
-      });
+    //     Array.from(document.getElementsByClassName("short")).forEach((element) => {
+    //       element.style.display = "none";
+    //       element.style.animation = "";
+    //   });
             
-      Array.from(document.getElementsByClassName("long")).forEach((element) => {
-        element.style.animation = "";
-    });
-        }, 2000);
+    //   Array.from(document.getElementsByClassName("long")).forEach((element) => {
+    //     element.style.animation = "";
+    // });
+    //     }, 2000);
     }
   else{
     Array.from(document.getElementsByClassName("fa-minus")).forEach((element) => {
@@ -98,13 +98,20 @@ document.addEventListener("click", function (event){
     console.log(clicked_element.classList)
     clicked_element.className = clicked_element.className.replace("fa-info", "fa-minus")
     Array.from(document.getElementsByClassName("long")).forEach((element) => {
-        element.style.animation = "hide-down 2s forwards";
+        element.style.display = "none";
     });
+    Array.from(document.getElementsByClassName("short")).forEach((element) => {
+      console.log("enter")
+        element.style.animation = "show-down 2s forwards";
+      element.style.display = "block"
+    });
+    document.getElementsByClassName("short " + clicked_element.parentElement.classList[1].split("-")[2])[0].style.display = "none";
     document.getElementsByClassName("long " + clicked_element.parentElement.classList[1].split("-")[2])[0].style.display = "block";
     Array.from(
       document.getElementsByClassName("long " + clicked_element.parentElement.classList[1].split("-")[2])).forEach((element)=>{
         element.style.display = "block";
-    element.style.animation = "show-down 2s forwards";})
+    element.style.animation = "show-down 2s forwards";
+    })
 
   }}
 
