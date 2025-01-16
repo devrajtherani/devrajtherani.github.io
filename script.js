@@ -33,7 +33,7 @@ document.addEventListener("click", function (event){
 
     if (clicked_element.classList.contains("fa-info") || clicked_element.classList.contains("info-button")){
       if (clicked_element.classList.contains("info-button")){
-        clicked_element = clicked_element.childElement
+        clicked_element = clicked_element.elementChild
       }
       if (document.getElementsByTagName("main")[0].classList.contains("collapse")){
         last_section = clicked_element.parentElement.classList[1].split("-")[2]
