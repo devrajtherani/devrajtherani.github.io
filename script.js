@@ -5,6 +5,7 @@ footer = document.getElementById("footer")
 doc_title.innerHTML = document.title
 intro.innerHTML = intro.innerHTML.replace('""', document.title)
 footer.innerHTML = footer.innerHTML.replace('""', (new Date()).getFullYear())
+last_section = 0
 
 document.addEventListener("click", function (event){
     let clicked_element = event.target
@@ -35,6 +36,7 @@ document.addEventListener("click", function (event){
         clicked_element = clicked_element.childElement
       }
       if (document.getElementsByTagName("main")[0].classList.contains("collapse")){
+        last_section = clicked_element.parentElement.classList[1].split("-")[2]
         console.log("enter")
       console.log(document.getElementsByTagName("main")[0].classList.contains("enlarge"))
       list = document.getElementsByTagName("section")
@@ -61,14 +63,23 @@ document.addEventListener("click", function (event){
         });
         console.log(clicked_element.classList)
         clicked_element.className = clicked_element.className.replace("fa-info", "fa-minus")
+        Array.from(document.querySelectorAll("section.fade-in")).forEach((element)=>{
+          console.log(element.offsetHeight)
+          console.log(element.scrollHeight)
+          element.style.height = `${element.offsetHeight}px`
+        })
         document.getElementsByClassName("short "+ clicked_element.parentElement.classList[1].split("-")[2])[0].style.display = "none"
         // Array.from(document.getElementsByClassName("short")).forEach((element) => {
-        //     element.style.display = "none";
+        //     element.style.animation = "show-down 2s forwards";
         // });
+        Array.from(document.querySelectorAll("section.fade-in")).forEach((element)=>{
+          console.log(element.offsetHeight)
+          console.log(element.scrollHeight)
+        })
 
         // Hide all elements with the "long" class
         Array.from(document.getElementsByClassName("long")).forEach((element) => {
-            //element.style.animation = "hide-down 2s forwards";
+            element.style.animation = "hide-down 2s forwards";
         });
         setTimeout(() => {
             console.log(
@@ -79,39 +90,65 @@ document.addEventListener("click", function (event){
             element.style.animation = "show-down 2s forwards";
               })
         });
-    //     setTimeout(() => {
+        
+        setTimeout(()=>{Array.from(document.querySelectorAll("section.fade-in")).forEach((element)=>{
+          element.style.transition = "height 2s ease"
+          element.offsetHeight
+        element.style.height = "auto"
+          element.offsetHeight
+        console.log(element.offsetHeight)
+        console.log(element.scrollHeight)
+        // element.style.height = `${element.scrollHeight}px`
+      })})
+        
+        setTimeout(() => {
+          
             
-    //     Array.from(document.getElementsByClassName("short")).forEach((element) => {
-    //       element.style.display = "none";
-    //       element.style.animation = "";
-    //   });
+        Array.from(document.getElementsByClassName("short")).forEach((element) => {
+          element.style.animation = "";
+      });
             
-    //   Array.from(document.getElementsByClassName("long")).forEach((element) => {
-    //     element.style.animation = "";
-    // });
-    //     }, 2000);
+      Array.from(document.getElementsByClassName("long")).forEach((element) => {
+        element.style.animation = "";
+    });Array.from(document.querySelectorAll("section.fade-in")).forEach((element) => {
+      element.style.height = "";
+  });
+        }, 2000);
+        
     }
   else{
+    console.log(last_section)
     Array.from(document.getElementsByClassName("fa-minus")).forEach((element) => {
         element.className = element.className.replace("fa-minus", "fa-info");
     });
+    clicked_element.className = clicked_element.className.replace("fa-info", "fa-minus")
+    Array.from(document.querySelectorAll("section.fade-in")).forEach((element)=>{
+      element.style.transition = ""
+      console.log(element.offsetHeight)
+      console.log(element.scrollHeight)
+      element.style.height = `${element.offsetHeight}px`
+    })
     console.log(clicked_element.classList)
     clicked_element.className = clicked_element.className.replace("fa-info", "fa-minus")
-    Array.from(document.getElementsByClassName("long")).forEach((element) => {
-        element.style.display = "none";
-    });
-    Array.from(document.getElementsByClassName("short")).forEach((element) => {
-      console.log("enter")
-        element.style.animation = "show-down 2s forwards";
-      element.style.display = "block"
-    });
-    document.getElementsByClassName("short " + clicked_element.parentElement.classList[1].split("-")[2])[0].style.display = "none";
-    document.getElementsByClassName("long " + clicked_element.parentElement.classList[1].split("-")[2])[0].style.display = "block";
-    Array.from(
-      document.getElementsByClassName("long " + clicked_element.parentElement.classList[1].split("-")[2])).forEach((element)=>{
-        element.style.display = "block";
-    element.style.animation = "show-down 2s forwards";
-    })
+        
+    setTimeout(()=>{Array.from(document.querySelectorAll("section.fade-in")).forEach((element)=>{
+      document.getElementsByClassName("short "+ clicked_element.parentElement.classList[1].split("-")[2])[0].style.display = "none"
+      Array.from(
+        document.getElementsByClassName("long " + clicked_element.parentElement.classList[1].split("-")[2])).forEach((element)=>{
+          element.style.display = "block";
+      element.style.animation = "show-down 2s forwards";})
+      
+      document.getElementsByClassName("long "+ last_section)[0].style.display = "none"
+      
+      document.getElementsByClassName("short "+ last_section)[0].style.display = "block"
+      document.getElementsByClassName("short "+ last_section)[0].style.animation = "show-down 2s ease"
+      element.style.transition = "height 2s ease"
+      element.offsetHeight
+    element.style.height = "auto"
+    console.log(element.offsetHeight)
+    console.log(element.scrollHeight)
+    // element.style.height = `${element.scrollHeight}px`
+  })}, 0)
 
   }}
 
