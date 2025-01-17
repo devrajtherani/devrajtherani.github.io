@@ -7,6 +7,12 @@ intro.innerHTML = intro.innerHTML.replace('""', document.title)
 footer.innerHTML = footer.innerHTML.replace('""', (new Date()).getFullYear())
 last_section = 0
 
+Array.from(document.getElementsByTagName("iframe")).forEach((element)=>{
+  element.style.aspectRatio = element.offsetWidth/element.offsetHeight
+  element.width = "100%"
+  element.height = ""
+})
+
 document.addEventListener("click", function (event){
     let clicked_element = event.target
     console.log(clicked_element)
@@ -35,6 +41,7 @@ document.addEventListener("click", function (event){
       if (clicked_element.classList.contains("info-button")){
         clicked_element = clicked_element.elementChild
       }
+      console.log(clicked_element)
       if (document.getElementsByTagName("main")[0].classList.contains("collapse")){
         last_section = clicked_element.parentElement.classList[1].split("-")[2]
         console.log("enter")
@@ -147,6 +154,7 @@ document.addEventListener("click", function (event){
     element.style.height = "auto"
     console.log(element.offsetHeight)
     console.log(element.scrollHeight)
+    setTimeout(()=>{last_section = clicked_element.parentElement.classList[1].split("-")[2]}, 2000)
     // element.style.height = `${element.scrollHeight}px`
   })}, 0)
 
