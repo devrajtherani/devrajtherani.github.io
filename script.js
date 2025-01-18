@@ -4,7 +4,6 @@ intro = document.getElementById("intro")
 footer = document.getElementById("footer")
 doc_title.innerHTML = document.title
 intro.innerHTML = intro.innerHTML.replace('""', document.title)
-footer.innerHTML = footer.innerHTML.replace('""', (new Date()).getFullYear())
 last_section = 0
 
 Array.from(document.getElementsByTagName("iframe")).forEach((element)=>{
@@ -39,7 +38,8 @@ document.addEventListener("click", function (event){
 
     if (clicked_element.classList.contains("fa-info") || clicked_element.classList.contains("info-button")){
       if (clicked_element.classList.contains("info-button")){
-        clicked_element = clicked_element.elementChild
+        console.log("yes")
+        clicked_element = clicked_element.children[0]
       }
       console.log(clicked_element)
       if (document.getElementsByTagName("main")[0].classList.contains("collapse")){
@@ -162,7 +162,7 @@ document.addEventListener("click", function (event){
 
     else if (clicked_element.classList.contains("fa-minus") || clicked_element.classList.contains("info-button")){
       if (clicked_element.classList.contains("info-button")){
-        clicked_element = clicked_element.childElement
+        clicked_element = clicked_element.children[0]
       }
       list = document.getElementsByTagName("section")
       console.log(list)
