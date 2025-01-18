@@ -87,55 +87,48 @@ html{
     white-space: pre-wrap;
   }
   
-  ul {
+  ul, ol {
     padding-left: 20px;
     color: #ccc;
     margin-bottom: 10px;
   }
 
-  iframe, img{
-    position: relative;
-    left: 0;
-    width: 100%;
-    aspect-ratio: 16/9;
-    border-radius: 5%;
-  }
-  
-  .zig-zag{
-    display: inline-block;
-    text-align: center;
-  }
-
-
-  ul.zig-zag{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vw; /* Space between items */
-    align-items: center; /* Align items vertically */
-    justify-content: center;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  ul.zig-zag>li{
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Align items vertically */
-    gap: 4vw; /* Add space between text and iframe */
-  }
-
-  li>section{
-    box-shadow: 0 2px 4px #111;
-    padding: 5px;
-    margin-bottom: 40px;
-    padding: 20px;
-    border-radius: 4px;
-    background-color: #333;
-  }
-
   li{
     padding: 5px;
   }
+
+  img, iframe{
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10%;
+    border: 10px solid #333;
+  }
+
+
+  .zig-zag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+}
+
+
+.zig-zag img {
+    width: 40%;
+    max-width: 400px;
+    min-width: 250px;
+    height: auto;
+    margin: 30px 0 10px 0;
+    transition: transform 2s ease, width 2s ease;
+}.zig-zag iframe {
+  width: 60%;
+  min-width: 250px;
+  aspect-ratio: 16/9;
+  margin: 30px 0 10px 0;
+  border-radius: 0;
+  transition: flex 2s ease, transform 2s ease, width 2s ease;
+}
   
   footer {
     background-color: #222;
@@ -362,6 +355,10 @@ html{
   .code-container {
     position: relative;
   }
+
+  .fa-arrow-up-right-from-square{
+    font-size: 10px;
+  }
   
   .info-button {
     position: absolute;
@@ -378,6 +375,10 @@ html{
   .info-button.light-mode {
     color: #222;
     background-color: transparent;
+  }
+
+  a{
+    cursor: pointer;
   }
   
   .info-button:hover {
