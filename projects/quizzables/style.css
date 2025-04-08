@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Grenze:wght@200;600&family=Karla:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+body{
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: 'Karla', sans-serif;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    padding: 5px 0;
+}
+h1{
+    font-size: large;
+}
+h2{
+    font-size: medium;
+}
+button{
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 20px;
+    width: 55vw;
+    height:  8vh;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+button:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgrey; 
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+html {
+  overflow: auto;
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track { 
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: darkgrey; 
+}
