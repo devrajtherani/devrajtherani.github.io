@@ -8,20 +8,8 @@
     position: absolute;
     font-family: 'Cinzel', serif;
 }
-.fa-discord{
-    color: #7289da;
-}
-.fa-discord:hover{
-    background-color: #7289da;
-}
 .fa-instagram{
     color: #ffa500;
-}
-.fa-facebook-messenger{
-    color: #006aff;
-}
-.fa-facebook-messenger:hover{
-    background-color: #006aff;
 }
 .fa-instagram:hover{
     background-color: #ffa500;
@@ -31,12 +19,6 @@
 }
 .fa-linkedin:hover{
     background-color: #0e76a8;
-}
-.fa-spotify{
-    color: #1ed760;
-}
-.fa-spotify:hover{
-    background-color: #1ed760;
 }
 h2{
     color: #eeeeee;
@@ -65,3 +47,4 @@ h2:hover{
     -webkit-animation: spin1 1s linear 1;
     animation: spin1 1s linear 1;
 }
+
